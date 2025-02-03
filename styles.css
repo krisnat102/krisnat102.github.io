@@ -1,0 +1,91 @@
+body {
+    background-image: url("assets/images/seamless-yellow-heart-pattern-vector_53876-67665.png");
+    background-repeat: repeat;
+}
+
+h1{
+    text-align: center;
+    margin-top: 10%;
+    font-size: 300%;
+    color:hsla(66, 100%, 11%, 0.541);
+    font-family: "Balsamiq Sans", serif;
+    text-shadow: rgba(217, 255, 0, 0.336) 2px 2px;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.button {
+  align-items: center;
+  border: 2px solid #111;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: #111;
+  cursor: pointer;
+  display: flex;
+  font-family: Inter,sans-serif;
+  font-size: 16px;
+  height: 48px;
+  justify-content: center;
+  line-height: 24px;
+  max-width: 100%;
+  padding: 0 25px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  font-family: "Balsamiq Sans", serif;
+  font-weight: 700;
+  font-size: 200%;
+  width: 15%;
+  height: 80px;
+}
+
+#wrong-answer{
+    background-color: #ff0000;
+    position: absolute;
+    top: 45%;
+    left: 57%;
+}
+
+#correct-answer{
+    background-color: #d884ff;
+    position: absolute;
+    top: 45%;
+    left: 33%;
+}
+
+.button::after {
+  background-color: #111;
+  border-radius: 8px;
+  content: "";
+  display: block;
+  height: 100%;
+  left: 0;
+  width: 100%;
+  position: absolute;
+  top: -2px;
+  transform: translate(8px, 8px);
+  transition: transform .2s ease-out;
+  z-index: -1;
+}
+
+.button:hover:after {
+  transform: translate(0, 0);
+}
+
+.button:active {
+  background-color: #ffdeda;
+  outline: 0;
+}
+
+.button:hover {
+  outline: 0;
+}
+
+@media (min-width: 768px) {
+  .button {
+    padding: 0 40px;
+  }
+}
